@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>E.com - Catalogue</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"> 
+    <link rel="stylesheet" type="text/css" href="../css/catalogue.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="../index.html">E.com</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="../index.html">Accueil</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="page-panier.html">Panier</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="page-catalogue.html">Catalogue</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="page-validation.html">Validation</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <div class="container mt-4">
+		<h2 class="text-center mb-4">Catalogue</h2>
+		<div class="row">
+			<div class="col-md-3 filtre-container">
+				<h5>Filtres</h5>
+				<div class="form-group">
+					<label for="search">Rechercher :</label>
+					<input type="text" class="form-control" id="search">
+				</div>
+				<div class="form-group">
+					<label for="categories">Catégories :</label>
+					<select class="form-control" id="categories">
+						<option>Toutes les catégories</option>
+						<option>Électronique</option>
+						<option>Vêtements</option>
+						<option>Maison et jardin</option>
+					</select>
+				</div>
+				<div class="form-group">
+					<label>Promo :</label>
+					<div class="custom-control custom-checkbox">
+						<input type="checkbox" class="custom-control-input" id="promo">
+						<label class="custom-control-label" for="promo">En promo uniquement</label>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-9">
+				<div class="row">
+					<div class="col-md-4">
+						<div class="card mb-4">
+							<img class="card-img-top" src="../img/iphone xr.jpg" alt="Card image cap">
+							<div class="card-body">
+								<h5 class="card-title">Produit 1</h5>
+								<p class="card-text">Description courte du produit 1</p>
+								<p class="card-text">Prix : 15,00 €</p>
+								<p class="card-text">Disponibilité : en stock</p>
+								<a href="page-panier.html" class="btn btn-primary btn-sm">Ajouter au panier</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="card mb-4">
+							<img class="card-img-top" src="../img/iPhone 11 pro max.jpg" alt="Card image cap">
+							<div class="card-body">
+								<h5 class="card-title">Produit 2</h5>
+								<p class="card-text">Description courte du produit 2</p>
+								<p class="card-text">Prix : 20,00 €</p>
+								<p class="card-text">Disponibilité : en stock</p>
+								<a href="page-panier.html" class="btn btn-primary btn-sm">Ajouter au panier</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="card mb-4">
+							<img class="card-img-top" src="../img/samsung galaxy s23.jpg" alt="Card image cap">
+							<div class="card-body">
+								<h5 class="card-title">Produit</h5>
+                                <p class="card-text">Description courte du produit</p>
+                                <h6 class="card-subtitle mb-2 text-muted">Prix : 20,00 €</h6>
+                                <p class="card-text">Disponibilité : en stock</p>
+                                <a href="page-panier.html" class="btn btn-primary">Ajouter au panier</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card mb-4">
+                            <img class="card-img-top" src="../img/bob obey.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Produit 2</h5>
+                                <p class="card-text">Description courte du produit</p>
+                                <h6 class="card-subtitle mb-2 text-muted">Prix : 25,00 €</h6>
+                                <p class="card-text">Disponibilité : en stock</p>
+                                <a href="page-panier.html" class="btn btn-primary">Ajouter au panier</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card mb-4">
+                            <img class="card-img-top" src="../img/nike air force 1.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Produit 3</h5>
+                                <p class="card-text">Description courte du produit</p>
+                                <h6 class="card-subtitle mb-2 text-muted">Prix : 30,00 €</h6>
+                                <p class="card-text">Disponibilité : en stock</p>
+                                <a href="page-panier.html" class="btn btn-primary">Ajouter au panier</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card mb-4">
+                            <img class="card-img-top" src="../img/t-shirt fila orange.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Produit 3</h5>
+                                <p class="card-text">Description courte du produit</p>
+                                <h6 class="card-subtitle mb-2 text-muted">Prix : 30,00 €</h6>
+                                <p class="card-text">Disponibilité : en stock</p>
+                                <a href="page-panier.html" class="btn btn-primary">Ajouter au panier</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card mb-4">
+                            <img class="card-img-top" src="../img/bottes egoa jardin.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Produit 3</h5>
+                                <p class="card-text">Description courte du produit</p>
+                                <h6 class="card-subtitle mb-2 text-muted">Prix : 30,00 €</h6>
+                                <p class="card-text">Disponibilité : en stock</p>
+                                <a href="page-panier.html" class="btn btn-primary">Ajouter au panier</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card mb-4">
+                            <img class="card-img-top" src="../img/sécateur jardin.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Produit 3</h5>
+                                <p class="card-text">Description courte du produit</p>
+                                <h6 class="card-subtitle mb-2 text-muted">Prix : 30,00 €</h6>
+                                <p class="card-text">Disponibilité : en stock</p>
+                                <a href="page-panier.html" class="btn btn-primary">Ajouter au panier</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card mb-4">
+                            <img class="card-img-top" src="../img/brouette jardin.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Produit 3</h5>
+                                <p class="card-text">Description courte du produit</p>
+                                <h6 class="card-subtitle mb-2 text-muted">Prix : 30,00 €</h6>
+                                <p class="card-text">Disponibilité : en stock</p>
+                                <a href="page-panier.html" class="btn btn-primary">Ajouter au panier</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <footer class="bg-light py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>E.com</h5>
+                    <p>Adresse de la boutique<br>Code postal Ville</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Nous contacter</h5>
+                    <p>Téléphone : +33 6 12 34 56 78<br>Email : contact@ma-boutique-en-ligne.com</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Horaires d'ouverture</h5>
+                    <p>Lundi/Vendredi : 10h00 - 20h00<br>Samedi/Dimanche : Fermé</p>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-md-6">
+                    <p>&copy; 2023 Ma boutique en ligne - Tous droits réservés</p>
+                </div>
+                <div class="col-md-6 text-right">
+                    <a href="#">Mentions légales</a> | <a href="#">Conditions générales de vente</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body> 
+</html>

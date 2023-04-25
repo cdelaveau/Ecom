@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>E.com - Validation</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"> 
+    <link rel="stylesheet" type="text/css" href="../css/validation.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="../index.html">E.com</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="../index.html">Accueil</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="page-panier.html">Panier</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="page-catalogue.html">Catalogue</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="page-validation.html">Validation</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <div class="container mt-4">
+        <h2 class="text-center mb-4">Validation de la commande</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <h3>Type de paiement</h3>
+                <div class="form-group">
+                    <div class="custom-control custom-radio">
+                        <input type="radio" id="cb" name="payment" class="custom-control-input" checked>
+                        <label class="custom-control-label" for="cb">Carte bancaire</label>
+                    </div>
+                    <div class="custom-control custom-radio">
+                        <input type="radio" id="paypal" name="payment" class="custom-control-input">
+                        <label class="custom-control-label" for="paypal">Paypal</label>
+                    </div>
+                </div>
+                <div id="cb-form">
+                    <h4>Informations de la carte</h4>
+                    <div class="form-group">
+                        <label for="card-number">Numéro de carte :</label>
+                        <input type="text" class="form-control" id="card-number">
+                    </div>
+                    <div class="form-row">
+                        <div class="col">
+                            <label for="expiration-date">Date d'expiration :</label>
+                            <input type="text" class="form-control" id="expiration-date">
+                        </div>
+                        <div class="col">
+                            <label for="cvv">Code de sécurité :</label>
+                            <input type="text" class="form-control" id="cvv">
+                        </div>
+                    </div>
+                </div>
+                <div id="paypal-form" class="d-none">
+                    <h4>Connexion Paypal</h4>
+                    <p>Veuillez vous connecter à votre compte Paypal pour finaliser votre paiement.</p>
+                    <a href="#" class="btn btn-primary">Connexion à Paypal</a>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <h3>Informations de livraison</h3>
+                <div class="form-group">
+                    <label for="fullname">Nom et prénom :</label>
+                    <input type="text" class="form-control" id="fullname">
+                </div>
+                <div class="form-group">
+                    <label for="phone">Numéro de téléphone :</label>
+                    <input type="text" class="form-control" id="phone">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email :</label>
+                    <input type="email" class="form-control" id="email">
+                </div>
+                <div class="form-group">
+                    <label for="delivery-address">Adresse de livraison :</label>
+                    <input type="text" class="form-control" id="delivery-address">
+                </div>
+                <div class="form-group">
+                    <label for="billing-address">Adresse de facturation :</label>
+                    <input type="text" class="form-control" id="billing-address">
+                </div>
+                <div class="form-group">
+                    <label for="delivery-option">Choisissez un point de retrait :</label>
+                    <select class="form-control" id="delivery-option">
+                        <option>Retrait en magasin</option>
+                        <option>Livraison à domicile</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="create-account">
+                        <label class="custom-control-label" for="create-account">Créer un compte</label>
+                    </div>
+                </div>
+                <h3>Paiement</h3>
+                <div class="form-group">
+                    <label for="payment-type">Type de paiement :</label>
+                    <select class="form-control" id="payment-type">
+                        <option>Carte bancaire</option>
+                        <option>Paypal</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="card-number">Numéro de carte :</label>
+                    <input type="text" class="form-control" id="card-number">
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="expiry-date">Date d'expiration :</label>
+                        <input type="text" class="form-control" id="expiry-date">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="ccv">CCV :</label>
+                        <input type="text" class="form-control" id="ccv">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <button class="btn btn-primary">Valider ma commande</button>
+                </div>
+            </div>
+        </div>
+    </div>    
+
+
+    <footer class="bg-light py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>E.com</h5>
+                    <p>Adresse de la boutique<br>Code postal Ville</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Nous contacter</h5>
+                    <p>Téléphone : +33 6 12 34 56 78<br>Email : contact@ma-boutique-en-ligne.com</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Horaires d'ouverture</h5>
+                    <p>Lundi/Vendredi : 10h00 - 20h00<br>Samedi/Dimanche : Fermé</p>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-md-6">
+                    <p>&copy; 2023 Ma boutique en ligne - Tous droits réservés</p>
+                </div>
+                <div class="col-md-6 text-right">
+                    <a href="#">Mentions légales</a> | <a href="#">Conditions générales de vente</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body> 
+</html>

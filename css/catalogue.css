@@ -1,0 +1,75 @@
+/* Style pour les filtres */
+.col-md-3 {
+    border: 1px solid #ddd;
+    padding: 15px;
+  }
+
+.filtre-container {
+  height: 40%;
+  width: auto;
+}
+  
+  /* Style pour la barre de recherche */
+  #search {
+    margin-bottom: 10px;
+  }
+  
+  /* Style pour la liste déroulante des catégories */
+  #categories {
+    margin-bottom: 10px;
+  }
+  
+  /* Style pour la checkbox promo */
+  .custom-control {
+    margin-bottom: 10px;
+  }
+  
+  /* Style pour les cartes produits */
+  .card {
+    margin-bottom: 20px;
+  }
+  
+  /* Style pour les titres des cartes produits */
+  .card-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  /* Style pour la description des cartes produits */
+  .card-text {
+    margin-bottom: 5px;
+  }
+  
+  /* Style pour le prix des cartes produits */
+  .card-subtitle {
+    font-size: 1rem;
+    margin-bottom: 5px;
+  }
+  
+  /* Style pour le bouton ajouter au panier */
+  .btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+  }
+  
+  .btn-primary:hover {
+    background-color: #0069d9;
+    border-color: #0062cc;
+  }
+  
+  .btn-primary:focus, .btn-primary.focus {
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5);
+  }
+  
+  .btn-primary.disabled, .btn-primary:disabled {
+    background-color: #007bff;
+    border-color: #007bff;
+  }
+  
+  .btn-primary:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active,
+  .show > .btn-primary.dropdown-toggle {
+    background-color: #0062cc;
+    border-color: #005cbf;
+  }
+  

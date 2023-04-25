@@ -1,0 +1,42 @@
+.produits-panier {
+    width: 150px;
+    height: auto;
+}
+.customer-reviews {
+    margin-top: 40px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    background-color: white;
+    }
+    
+    .review {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    }
+    
+    .rating {
+    font-size: 24px;
+    margin-bottom: 10px;
+    }
+    
+    .star {
+    color: #f39c12;
+    }
+    
+    .comment {
+    font-size: 18px;
+    }
+    
+    .author {
+    font-style: italic;
+    }
+    
+    .btn-primary {
+    display: block;
+    margin: 20px auto 0;
+    width: 200px;
+    }
+  
+  

@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>E.com - Panier</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"> 
+    <link rel="stylesheet" type="text/css" href="../css/panier.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="../index.html">E.com</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="../index.html">Accueil</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="page-panier.html">Panier</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="page-catalogue.html">Catalogue</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="page-validation.html">Validation</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <section class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Mon panier</h2>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Produit</th>
+                        <th>Quantité</th>
+                        <th>Prix Unité</th>
+                        <th>Prix Total</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <img src="../img/enceinte.jpg" alt="Photo du produit" class="produits-panier">
+                            <p class="mt-0">MARSHALL UXBRIDGE GOOGLE NOIR</p>
+                            <p>L’Uxbridge Voice a été conçue pour fournir un son percutant à partir d’un support compact. Une configuration avancée, des composants de pointe, tout a été pensé pour produire des aigus perçants et des basses percutantes, que seul Marshall est capable d’offrir.</p>
+                            <p class="mb-0">Disponibilité : en stock</p>
+                        </td>
+                        <td>
+                            <input id="prix-input" name="prix-input" type="number" class="form-control" value="1">
+                        </td>
+                        <td>150 €</td>
+                        <td>150 €</td>
+                        <td>
+                            <button class="btn btn-sm btn-primary">Supprimer</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="../img/centrifugeuse.jpg" alt="Photo du produit" class="produits-panier">
+                            <p class="mt-0">KENWOOD JMP800SI</p>
+                            <p>Avec cet extracteur de jus Kenwood JMP800SI en silver, vous conservez toutes les propriétés nutritionnelles des fruits et légumes et toutes leurs saveurs car cet appareil ne chauffe pas les ingrédients. Fini la découpe des fruits et des légumes, grâce à sa cheminée extra large.</p>
+                            <p class="mb-0">Disponibilité : en stock</p>
+                        </td>
+                        <td>
+                            <input type="number" class="form-control" value="1">
+                        </td>
+                        <td>200 €</td>
+                        <td>200 €</td>
+                        <td>
+                            <button class="btn btn-sm btn-primary">Supprimer</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="../img/disque dur.jpg" alt="Photo du produit" class="produits-panier">
+                            <p class="mt-0">SYNOLOGY SYNOLOGY DISK STATION DS 220J</p>
+                            <p>Synology DiskStation DS220j est un système de stockage connecté au réseau d'entrée de gamme qui permet à votre famille de stocker et de partager des photos, des vidéos, des documents et tous types de données personnelles.</p>
+                            <p class="mb-0">Disponibilité : en stock</p>
+                        </td>
+                        <td>
+                            <input type="number" class="form-control" value="2">
+                        </td>
+                        <td>20 €</td>
+                        <td>40 €</td>
+                        <td>
+                            <button class="btn btn-sm btn-primary">Supprimer</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <hr>
+            <div class="row">
+                <div class="col-md-12">
+                    <h3>Total</h3>
+                    <table class="table">
+                        <tbody>
+                            <tr>
+                                <td>Sous-total :</td>
+                                <td>400 €</td>
+                            </tr>
+                            <tr>
+                                <td>Taxes :</td>
+                                <td>5,50 €</td>
+                            </tr>
+                            <tr>
+                                <td>Frais de livraison :</td>
+                                <td>7,00 €</td>
+                            </tr>
+                            <tr>
+                                <td>Code promo :</td>
+                                <td>
+                                    <input type="text" class="form-control">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Total :</td>
+                                <td>412,50 €</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <a href="page-validation.html" class="btn btn-primary">Valider la commande</a>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-md-12">
+                    <h3>Mentions légales</h3>
+                    <p>Nom de l'entreprise : E.com SARL<br>Siège social : 123 rue des exemples, 75000 Paris<br>Numéro de téléphone : +33 1 23 45 67 89<br>Adresse e-mail : contact@ecom.fr<br>Numéro d'immatriculation : 123456789 (registre du commerce et des sociétés de Paris)<br>Capital social : 100 000 euros<br>Directeur de la publication : Bérengère Labergère<br>Hébergeur du site : OVH SAS, 2 rue Kellermann, 59100 Roubaix</p>
+                    <h3>Conditions générales de vente (CGV)</h3>
+                    <p>Prix : Les prix des produits sont indiqués en euros toutes taxes comprises (TTC).<br>Livraison : Les produits sont livrés à l'adresse indiquée par le client lors de la commande. Les délais de livraison sont indiqués sur le site et peuvent varier en fonction du produit et de la destination.<br>Retours et remboursements : Le client dispose d'un délai de 14 jours pour exercer son droit de rétractation. Les produits doivent être retournés dans leur emballage d'origine et en bon état.<br>Modalités de paiement : Le paiement s'effectue en ligne au moment de la commande. Nous acceptons les cartes bancaires (Visa, Mastercard) ainsi que les paiements PayPal.<br>Service client : Pour toute question ou réclamation, notre service client est disponible par téléphone, e-mail ou courrier à l'adresse indiquée ci-dessus.</p>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="customer-reviews col-md-12">
+                    <h3>Avis clients</h3>
+                    <hr>
+                    <div class="review">
+                      <div class="rating">
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9734;</span>
+                      </div>
+                      <p class="comment">Très bon produit, livraison rapide et service client agréable. Je recommande ce site !</p>
+                      <p class="author">- Marie D.</p>
+                    </div>
+                    <div class="review">
+                      <div class="rating">
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                      </div>
+                      <p class="comment">Site très sérieux, produits de qualité et livraison rapide. Je suis très satisfait de mon achat.</p>
+                      <p class="author">- Jean-Luc P.</p>
+                    </div>
+                    <div class="review">
+                      <div class="rating">
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9734;</span>
+                        <span class="star">&#9734;</span>
+                      </div>
+                      <p class="comment">Produit correct mais livraison très longue et service client peu réactif. Je suis mitigé quant à mon expérience d'achat sur ce site.</p>
+                      <p class="author">- Philippe G.</p>
+                    </div>
+                    <a href="#" class="btn btn-primary">Voir tous les avis</a>
+                </div>                                
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-md-12">
+                    <h3>Suggestion de produits</h3>
+                    <div class="card-deck">
+                        <div class="card">
+                            <img src="../img/écouteurs jbl.jpg" class="card-img-top" alt="Photo du produit">
+                            <div class="card-body">
+                                <h4 class="card-title">JBL TUNE 220TWS</h4>
+                                <p class="card-text">Description du produit</p>
+                                <a href="page-catalogue.html" class="btn btn-primary">Voir le produit</a>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="../img/pc.jpg" class="card-img-top" alt="Photo du produit">
+                            <div class="card-body">
+                                <h4 class="card-title">ZenBook Duo UX481</h4>
+                                <p class="card-text">Description du produit</p>
+                                <a href="page-catalogue.html" class="btn btn-primary">Voir le produit</a>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="../img/clé usb.jpg" class="card-img-top" alt="Photo du produit">
+                            <div class="card-body">
+                                <h4 class="card-title">Kingston Digital</h4>
+                                <p class="card-text">Description du produit</p>
+                                <a href="page-catalogue.html" class="btn btn-primary">Voir le produit</a>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="../img/câble usb.jpg" class="card-img-top" alt="Photo du produit">
+                            <div class="card-body">
+                                <h4 class="card-title">Câble tressé USB-C</h4>
+                                <p class="card-text">Description du produit</p>
+                                <a href="page-catalogue.html" class="btn btn-primary">Voir le produit</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+
+
+    <footer class="bg-light py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>E.com</h5>
+                    <p>Adresse de la boutique<br>Code postal Ville</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Nous contacter</h5>
+                    <p>Téléphone : +33 6 12 34 56 78<br>Email : contact@ma-boutique-en-ligne.com</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Horaires d'ouverture</h5>
+                    <p>Lundi/Vendredi : 10h00 - 20h00<br>Samedi/Dimanche : Fermé</p>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-md-6">
+                    <p>&copy; 2023 Ma boutique en ligne - Tous droits réservés</p>
+                </div>
+                <div class="col-md-6 text-right">
+                    <a href="#">Mentions légales</a> | <a href="#">Conditions générales de vente</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body> 
+</html>
+        
